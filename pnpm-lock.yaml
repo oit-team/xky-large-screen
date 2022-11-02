@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@iconify/json': ^2.1.83
-  '@oit/eslint-config-vue-ts': ^0.4.0
+  '@oit/eslint-config-vue-ts': ^0.4.1
   '@unocss/reset': ^0.46.2
   '@vitejs/plugin-vue2': ^1.1.2
   '@vueuse/core': ^9.0.0
@@ -15,7 +15,6 @@ specifiers:
   unplugin-icons: ^0.14.7
   unplugin-vue-components: ^0.21.2
   vite: ^3.0.3
-  vite-plugin-eslint: ^1.8.1
   vue: ^2.7.8
   vue-router: ^3.5.4
   vue-template-compiler: ^2.7.8
@@ -30,7 +29,7 @@ dependencies:
 
 devDependencies:
   '@iconify/json': 2.1.131
-  '@oit/eslint-config-vue-ts': 0.4.0_wyqvi574yv7oiwfeinomdzmc3m
+  '@oit/eslint-config-vue-ts': 0.4.1_wyqvi574yv7oiwfeinomdzmc3m
   '@vitejs/plugin-vue2': 1.1.2_vite@3.2.2+vue@2.7.13
   eslint: 8.26.0
   husky: 8.0.1
@@ -40,7 +39,6 @@ devDependencies:
   unplugin-icons: 0.14.13_sygas27vm32wvx57btkcgpebjq
   unplugin-vue-components: 0.21.2_vite@3.2.2+vue@2.7.13
   vite: 3.2.2
-  vite-plugin-eslint: 1.8.1_eslint@8.26.0+vite@3.2.2
   vue-template-compiler: 2.7.13
   vue-template-es2015-compiler: 1.9.1
 
@@ -237,8 +235,8 @@ packages:
       fastq: 1.13.0
     dev: true
 
-  /@oit/eslint-config-basic/0.4.0_5aea5dp4n23mfv4y2mmjxole3e:
-    resolution: {integrity: sha512-NRj0FA8raHgeeDjGw3ihVGFTw0JvO2+hkz+8o6dUE8TFwZ+698kzN1fOeFt71PaJS+KLvg5NA3AyWr1MrHoc/Q==}
+  /@oit/eslint-config-basic/0.4.1_5aea5dp4n23mfv4y2mmjxole3e:
+    resolution: {integrity: sha512-OlHilcQakfgyg+hZqojHDlz5Q9oVv3kZXezl74itMvmHV8mNdO3LWBdwnSkPeCbkI9PeiusXm0YsFB6CMoWWDg==}
     peerDependencies:
       eslint: '>=7.4.0'
     dependencies:
@@ -260,13 +258,13 @@ packages:
       - supports-color
     dev: true
 
-  /@oit/eslint-config-ts/0.4.0_wyqvi574yv7oiwfeinomdzmc3m:
-    resolution: {integrity: sha512-TTvqe+xtitLKBZbZH1CoXHSmi1nmnRSBIKUOiZHOWN8TuQcOpyG5vfJ9mjku1VxwvB8ZewHRQV5kSu5kkyf0OA==}
+  /@oit/eslint-config-ts/0.4.1_wyqvi574yv7oiwfeinomdzmc3m:
+    resolution: {integrity: sha512-xcgFm2ISKc/d+j+y0FQjzQZjw8z7neN2/PbExXnLGB6SYBYP7TnDZ93O3iZ1h1V8yKmmY6vOnWdmZ5V8PyqoRg==}
     peerDependencies:
       eslint: '>=7.4.0'
       typescript: '>=3.9'
     dependencies:
-      '@oit/eslint-config-basic': 0.4.0_5aea5dp4n23mfv4y2mmjxole3e
+      '@oit/eslint-config-basic': 0.4.1_5aea5dp4n23mfv4y2mmjxole3e
       '@typescript-eslint/eslint-plugin': 5.42.0_6xw5wg2354iw4zujk2f3vyfrzu
       '@typescript-eslint/parser': 5.42.0_wyqvi574yv7oiwfeinomdzmc3m
       eslint: 8.26.0
@@ -277,12 +275,12 @@ packages:
       - supports-color
     dev: true
 
-  /@oit/eslint-config-vue-ts/0.4.0_wyqvi574yv7oiwfeinomdzmc3m:
-    resolution: {integrity: sha512-dlFOLpJCFna0doduXAg//h4UnVCsQhR2BSTVrKqAz1Szjdy+eso+h1Rv9D5YjFx4JuVDfwURltpkWb8gzkKlaw==}
+  /@oit/eslint-config-vue-ts/0.4.1_wyqvi574yv7oiwfeinomdzmc3m:
+    resolution: {integrity: sha512-VbaJj57KhLmTs7sdHv0C0lFw3Qm1MWEPGVkXfVk3G4++BIy3empIStKW62NHVsTwkSBUQ63EjYh/4pXnxI5t0g==}
     peerDependencies:
       eslint: '>=7.4.0'
     dependencies:
-      '@oit/eslint-config-ts': 0.4.0_wyqvi574yv7oiwfeinomdzmc3m
+      '@oit/eslint-config-ts': 0.4.1_wyqvi574yv7oiwfeinomdzmc3m
       eslint: 8.26.0
       eslint-plugin-vue: 9.7.0_eslint@8.26.0
     transitivePeerDependencies:
@@ -316,13 +314,6 @@ packages:
       '@types/estree': 1.0.0
       estree-walker: 2.0.2
       picomatch: 2.3.1
-    dev: true
-
-  /@types/eslint/8.4.9:
-    resolution: {integrity: sha512-jFCSo4wJzlHQLCpceUhUnXdrPuCNOjGFMQ8Eg6JXxlz3QaCKOb7eGi2cephQdM4XTYsNej69P9JDJ1zqNIbncQ==}
-    dependencies:
-      '@types/estree': 1.0.0
-      '@types/json-schema': 7.0.11
     dev: true
 
   /@types/estree/1.0.0:
@@ -3171,19 +3162,6 @@ packages:
     dependencies:
       spdx-correct: 3.1.1
       spdx-expression-parse: 3.0.1
-    dev: true
-
-  /vite-plugin-eslint/1.8.1_eslint@8.26.0+vite@3.2.2:
-    resolution: {integrity: sha512-PqdMf3Y2fLO9FsNPmMX+//2BF5SF8nEWspZdgl4kSt7UvHDRHVVfHvxsD7ULYzZrJDGRxR81Nq7TOFgwMnUang==}
-    peerDependencies:
-      eslint: '>=7'
-      vite: '>=2'
-    dependencies:
-      '@rollup/pluginutils': 4.2.1
-      '@types/eslint': 8.4.9
-      eslint: 8.26.0
-      rollup: 2.79.1
-      vite: 3.2.2
     dev: true
 
   /vite/3.2.2:
