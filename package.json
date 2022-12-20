@@ -9,9 +9,15 @@
   "dependencies": {
     "@unocss/reset": "^0.46.2",
     "@vueuse/core": "^9.0.0",
+    "axios": "^0.24.0",
     "core-js": "^3.24.0",
+    "lodash": "^4.17.15",
+    "swiper": "^5",
     "vue": "^2.7.8",
-    "vue-router": "^3.5.4"
+    "vue-awesome-swiper": "^4.1.1",
+    "vue-router": "^3.5.4",
+    "vuetify": "^2.6.13",
+    "vuex": "^3.4.0"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.2.0",
@@ -23,10 +29,10 @@
     "eslint": "^8.20.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
+    "sass": "~1.32",
     "typescript": "^4.7.4",
     "unocss": "^0.46.2",
     "unplugin-auto-import": "^0.10.1",
-    "unplugin-icons": "^0.14.7",
     "unplugin-vue-components": "^0.21.2",
     "vite": "^3.0.3",
     "vite-plugin-eslint": "^1.8.1",
@@ -42,6 +48,9 @@
     "extends": "@commitlint/config-conventional"
   },
   "eslintConfig": {
-    "extends": "@oit/vue-ts"
+    "extends": "@oit/vue-ts",
+    "rules": {
+      "vue/component-name-in-template-casing": "off"
+    }
   }
 }

@@ -3,10 +3,9 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue2'
 import Unocss from 'unocss/vite'
 import Components from 'unplugin-vue-components/vite'
-import Icons from 'unplugin-icons/vite'
-import IconsResolver from 'unplugin-icons/resolver'
 import AutoImport from 'unplugin-auto-import/vite'
 import Eslint from 'vite-plugin-eslint'
+import { VuetifyResolver } from 'unplugin-vue-components/resolvers'
 
 const config = defineConfig({
   resolve: {
@@ -28,15 +27,10 @@ const config = defineConfig({
     // https://www.npmjs.com/package/unplugin-vue-components
     Components({
       resolvers: [
-        IconsResolver({
-          componentPrefix: '',
-        }),
+        VuetifyResolver(),
       ],
       dts: 'src/components.d.ts',
     }),
-
-    // https://www.npmjs.com/package/unplugin-icons
-    Icons(),
 
     // https://www.npmjs.com/package/unplugin-auto-import
     AutoImport({
@@ -45,6 +39,7 @@ const config = defineConfig({
       ],
       dts: 'src/auto-imports.d.ts',
     }),
+
     Eslint(),
   ],
 
