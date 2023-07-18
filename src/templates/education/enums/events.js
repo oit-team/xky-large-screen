@@ -1,0 +1,2 @@
+// 切换感兴趣
+export const TOGGLE_ACTIVE = 'EDUCATION:TOGGLE_ACTIVE'

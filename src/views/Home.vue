@@ -11,6 +11,8 @@ export default defineComponent({
 <template>
   <div>
     {{ message }}
-    <v-btn>123</v-btn>
+    <v-btn v-ripple="false">
+      123
+    </v-btn>
   </div>
 </template>

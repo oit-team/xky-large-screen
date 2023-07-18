@@ -9,6 +9,19 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    VBadge: typeof import('vuetify/lib')['VBadge']
     VBtn: typeof import('vuetify/lib')['VBtn']
+    VCard: typeof import('vuetify/lib')['VCard']
+    VCardTitle: typeof import('vuetify/lib')['VCardTitle']
+    VDialog: typeof import('vuetify/lib')['VDialog']
+    VDivider: typeof import('vuetify/lib')['VDivider']
+    VIcon: typeof import('vuetify/lib')['VIcon']
+    VImg: typeof import('vuetify/lib')['VImg']
+    VItem: typeof import('vuetify/lib')['VItem']
+    VItemGroup: typeof import('vuetify/lib')['VItemGroup']
+    VProgressLinear: typeof import('vuetify/lib')['VProgressLinear']
+    VSwiper: typeof import('vuetify/lib')['VSwiper']
+    VSwiperSlide: typeof import('vuetify/lib')['VSwiperSlide']
+    VTextField: typeof import('vuetify/lib')['VTextField']
   }
 }

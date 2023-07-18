@@ -26,6 +26,7 @@ const config = defineConfig({
 
     // https://www.npmjs.com/package/unplugin-vue-components
     Components({
+      dirs: [],
       resolvers: [
         VuetifyResolver(),
       ],
@@ -45,6 +46,18 @@ const config = defineConfig({
 
   server: {
     port: 3333,
+    proxy: {
+      '/api': {
+        target: 'http://192.168.9.67:9092',
+        changeOrigin: true,
+        rewrite: path => path.replace('/api', ''),
+      },
+      '/gdy': {
+        target: 'http://222.186.58.235:18104/gdy',
+        changeOrigin: true,
+        rewrite: path => path.replace('/gdy', ''),
+      },
+    },
   },
 })
 

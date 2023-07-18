@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuetify from 'vuetify/lib/framework'
+import { ClickOutside, Ripple } from 'vuetify/lib'
 import nativeMeasurable from 'vuetify/lib/mixins/measurable'
 import zhHans from 'vuetify/lib/locale/zh-Hans'
 import Measurable from '@/mixins/Measurable'
@@ -11,7 +12,12 @@ import Measurable from '@/mixins/Measurable'
  */
 nativeMeasurable.mixin(Measurable)
 
-Vue.use(Vuetify)
+Vue.use(Vuetify, {
+  directives: {
+    Ripple,
+    ClickOutside,
+  },
+})
 
 export default new Vuetify({
   theme: {

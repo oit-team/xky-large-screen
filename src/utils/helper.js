@@ -66,5 +66,9 @@ export const formatDate = (date, format = 'yyyy/MM/dd') => {
 }
 
 export function getSmallImage(img, size = 's') {
-  return img.replace(/(.*)\./, `$1_${size}.`)
+  return img && img.replace(/(.*)\./, `$1_${size}.`)
+}
+
+export function getVideoFrame(src) {
+  return src && src.replace(/(.*)\..*/, '$1_s.jpg')
 }

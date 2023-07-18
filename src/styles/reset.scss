@@ -1,0 +1,14 @@
+* {
+  user-select: none;
+}
+
+// 隐藏滚动条
+::-webkit-scrollbar {
+  display: none;
+}
+
+// 消除vuetify grid组件引起的样式冲突
+.flex, .child-flex > * {
+  flex: initial;
+  max-width: initial;
+}
